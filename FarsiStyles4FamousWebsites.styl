@@ -1,0 +1,36 @@
+/* ==UserStyle==
+@name           FarsiStyles4FamousWebsites
+@namespace      professormahi
+@version        1.10.3
+@description    Styles for Famous Websites to Add Farsi Fonts
+@author         Mahdi Fooladgar (professormahi_f@yahoo.com)
+@homepageURL    https://gist.github.com/professormahi/2b20426f737664241104960e0dad4562/
+@preprocessor   stylus
+@license        MIT
+==/UserStyle== */
+@import"https://cdn.jsdelivr.net/gh/rastikerdar/shabnam-font@v5.0.1/dist/font-face.css";
+
+
+@-moz-document domain("web.whatsapp.com") {
+    body {
+        font-family: "Shabnam";
+    }
+}
+
+@-moz-document domain("messages.google.com") {
+    .text-msg-content,
+    .snippet-text,
+    textarea {
+        font-family: "Shabnam" !important;
+    }
+}
+
+@-moz-document domain("tasks.google.com"),
+domain("mail.google.com"),
+domain("calendar.google.com") {
+    body,
+    textarea,
+    :dir(rtl) {
+        font-family: "Shabnam" !important;
+    }
+}
