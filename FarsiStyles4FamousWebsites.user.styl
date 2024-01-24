@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           FarsiStyles4FamousWebsites
 @namespace      professormahi
-@version        1.10.4
+@version        1.10.5
 @description    Styles for Famous Websites to Add Farsi Fonts
 @author         Mahdi Fooladgar (professormahi_f@yahoo.com)
 @homepageURL    https://github.com/professormahi/stylus-styles/
@@ -9,13 +9,15 @@
 @updateURL      https://github.com/professormahi/stylus-styles/raw/main/FarsiStyles4FamousWebsites.user.styl
 @preprocessor   stylus
 @license        MIT
+
+@var select fontFamily "Font Family" ["Shabnam*", "Vazir"]
 ==/UserStyle== */
 @import"https://cdn.jsdelivr.net/gh/rastikerdar/shabnam-font@v5.0.1/dist/font-face.css";
 
 
 @-moz-document domain("web.whatsapp.com") {
     body {
-        font-family: "Shabnam";
+        font-family: fontFamily;
     }
 }
 
@@ -23,7 +25,7 @@
     .text-msg-content,
     .snippet-text,
     textarea {
-        font-family: "Shabnam" !important;
+        font-family: fontFamily !important;
     }
 }
 
@@ -33,6 +35,6 @@ domain("calendar.google.com") {
     body,
     textarea,
     :dir(rtl) {
-        font-family: "Shabnam" !important;
+        font-family: fontFamily !important;
     }
 }
