@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           FarsiStyles4FamousWebsites
 @namespace      professormahi
-@version        1.10.8
+@version        1.11.0
 @description    Styles for Famous Websites to Add Farsi Fonts
 @author         Mahdi Fooladgar (professormahi_f@yahoo.com)
 @homepageURL    https://github.com/professormahi/stylus-styles/
@@ -44,5 +44,12 @@ domain("calendar.google.com") {
 @-moz-document domain("twitter.com") {
     :dir(rtl) {
         font-family: fontFamily !important;
+    }
+}
+
+@-moz-document domain("bale.ai") {
+    /* Turn off Ads. */
+    div.Mn0dIy {
+        display: None;
     }
 }
